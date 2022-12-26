@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Redkost Comic', sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 217, 0);
+    display: grid;
+    place-content: center;
+}
+.container #soundTrack { 
+    display: none 
+}
+.container .font-family {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
+/* .container .app .fontFamily {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+} */
+.container #en{
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    padding: 10px;
+    background-color: green;
+    color: rgb(255, 217, 0);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container .app {
+    width: 300px;
+    height: 270px;
+    background: white;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+    .container .app header {
+    display: flex;
+    justify-content: space-between;
+}
+.container .app header span:first-child {
+    padding: 20px;
+    cursor:default;
+    font-size: 20px;
+} 
+.container .app header span:last-child {
+    padding: 20px 10px;
+    cursor:default;
+    color: green;
+} 
+.container .app h1 {
+    font-size: 20px;
+    padding: 15px 0 10px;
+    cursor:default;
+}
+.container .app input {
+    width: 85%;
+    height: 35px;
+    margin: 10px 0 20px;
+    border: 3px solid green;
+    text-align: center;
+    font-size: 17px;
+}
+/* Chrome, Safari, Edge, Opera */
+.container .app input::-webkit-outer-spin-button,
+.container .app input::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* hide the input number bar */
+    margin: 0;
+}
+.container .app input:focus {
+    outline: 0px solid green;
+}
+.container .app input::placeholder {
+    text-align: center;
+    font-size: 17px;
+}
+.container .app button {
+    width: 85%;
+    padding: 10px;
+    color: white;
+    background-color: green;
+    border:  3px solid green;
+    text-transform: capitalize;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+span {
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 40px;
+    line-height: 1.4;
+}

@@ -49,13 +49,26 @@ function checkAnswer(){
 };
 
 // main functions
-
 setNum();
-btn.addEventListener('click',()=> {
+function submit(){
     checkAnswer();
     setNum();
     clearInput();
     autoPlay();
     input.focus();
-});
+}
+
+// submit the answer when the submit button is clicked
+btn.addEventListener('click', submit);
+
+// submit the answer when the enter key is pressed
+input.addEventListener('keydown',(e)=> {
+    if (e.key == 'Enter') {
+        submit()
+    }
+})
+    
+
+
+
 

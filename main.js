@@ -9,9 +9,6 @@ let input = document.getElementById("input") ;
 let btn = document.getElementById("btn") ;
 let soundTrack = document.getElementById("soundTrack");
 
-
-
-
 // play the soundTrack
 function autoPlay() {
     soundTrack.load;
@@ -26,16 +23,16 @@ function setNum() {
     num2.innerText = m ;
 }
 
-// clear the input after submit the answer
+// clear the input after submitting the answer
 function clearInput() {
-        input.value = '';
+    input.value = '';
 }
 
 // compare the result and the given answer
 function checkAnswer(){
     const result = parseInt(num1.innerText) * parseInt(num2.innerText) ;
     const value = parseInt(input.value);
-    if ( value === result){
+    if (value === result){
         emoji.innerHTML = happy;
         score.innerText = parseInt(score.innerText) + 1;
     }else{
@@ -67,8 +64,3 @@ input.addEventListener('keydown',(e)=> {
         submit()
     }
 })
-    
-
-
-
-
